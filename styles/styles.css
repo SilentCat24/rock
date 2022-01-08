@@ -9,87 +9,118 @@ html{
 }
 
 body{
-  font-family:'oswald', sans-serif;
-  background-color:gray;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
+height:100vh;
+background-color:#62929E;
+}
 
-}
-h1{
-  text-align:center;
-  margin-bottom:2rem;
-}
 
 .container{
   width:45%;
-  min-width:35rem;
-  background-color: rgb(189, 44, 181);
-  padding:4rem 3rem;
-  /* position:absolute; */
-  border-radius:0.8rem;
-  box-shadow:0.1rem 2rem rgba(0,0,0,0.15);
-
-}
-header{
-  font-size:1.5rem;
-  font-weight:700;
-  line-height:1.9rem;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  
+  min-width:500px;
+  background-color: #99F7AB;
+  padding:2.5rem 2rem;
+  position:absolute;
+  transform: translate(-50%,-50%);
+top:50%;
+left:50%;
+box-shadow:0 15px 25px rgba(0,0,0,0.25) ;
 }
 
-.scores p{
+.scores{
+  margin-bottom:50px;
+  text-align:right;
+}
+.scores p,
+#computer_score,
+#user_score{
   font-size:1.2rem;
-  line-height:1.4rem;
-  font-weight:400;
-}
-
-.scores p span{
-  font-weight:600;
+  font-weight:700;
+  color:#457B9D;
 }
 
 .weapons{
-  margin:1rem auto;
-  width:90%;
+  width: 90%;
   margin:auto;
   display:flex;
-  justify-content: space-between;
+  justify-content:space-around;
+  
+}
+.weapons_{
+  width: 90%;
+  margin:auto;
+  display:flex;
+  justify-content:space-around;
+  
 }
 
 .weapons button{
-  background-color: rgb(33, 33, 59);
-  color:white;
+  background-color:#ffd51b;
+  color:black;
   border:none;
-  font-size: 4rem;
-height:8rem;
-width:8rem;
-border-radius:50%;
-outline:none;
-cursor:pointer;
+  font-size:2.5rem;
+  height:4rem;
+  width:4rem;
+  border-radius:50%;
+  outline:none;
+  cursor:pointer;
 
-/* padding-bottom:1rem; */
+  
 }
+.weapons_ button{
+  background-color:#ffd51b;
+  color:black;
+  border:none;
+  font-size:2.5rem;
+  height:4rem;
+  width:4rem;
+  border-radius:50%;
+  outline:none;
+  cursor:pointer;
+  margin-top:1rem; 
+}  
 
-.results{
+.details{
   margin-top:2rem;
+}
+#userChoice,
+#compChoice{
+ color:rgb(134, 115, 115);
+ font-size: 1.2rem;
+font-weight:700;
+}
+
+#click{
+  background-color: rgb(112, 117, 167);
+  font-size: 0.8rem;
+  color:white;
+  padding:0.5rem;
+  border-radius:5px;
+  border:2px solid rgb(112, 117, 167);
+  outline:none;
+  margin:1rem;
+  
+}
+#result{
+  color:#576066;
+  font-size:1.5rem;
+}
+
+
+#userChoice,
+#compChoice
+{
+text-align:center;
+
+
+}
+
+#winner{
+ display:block;
+ font-size:2.5rem;
+  color:black;
   text-align:center;
+  background-color: rgb(214, 17, 50);
+  border-radius:15px;
+  margin-top:4rem;
+  color:white;
 }
-
-#results{
-  width:12rem;
-  padding:1rem 0;
-  margin:2rem auto;
-letter-spacing: 0.5px;
-}
-
-/* #user-choice, 
-#computer-choice{
-
-
-} */

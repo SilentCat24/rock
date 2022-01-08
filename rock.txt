@@ -1,0 +1,7 @@
+new words
+
+letter-spacing: 0.5px;
+cursor:pointer;
+
+
+inline scrpiting

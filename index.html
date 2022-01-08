@@ -4,49 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <title>Rock Paper scissors</title>
 </head>
 
 <body>
-  <h1>Rock paper scissors</h1>
  <div class="container">
-<header>
-<div class="title">
-
-<p>Rock</p>
-<p>Paper</p>
-<p>Scissors</p>
-</div>
-
 <div class="scores">
-<p>computer: <span id="computer-score">0</span></p>
-<p>User:<span0 id="computer-score">0</span0</p>
+<p>Computer: <span id="computer_score">0</span></p>
+<p>User: <span id="user_score">0</span></p> 
+
 </div>
-</header>
 
 <div class="weapons">
-<button><i class="far fa-hand-rock"></i></button>
-<button><i class="far fa-hand-paper"></i></button>
-<button><i class="far fa-hand-scissors"></i></button>
 
-
-</div>
-
-<div class="results">
-<p id="user-choice"></p>
-<p id="computer-choice"></p>
-<p id="resuylt"></p>
-
-
-
-</div>
-
+<button onclick="gameChecker('rock')"><i class="far fa-hand-rock"></i></button>                             
+<button onclick="gameChecker('paper')"><i class="far fa-hand-paper"></i></button>
+<button onclick="gameChecker('scissor')"><i class="far fa-hand-scissors"></i></button>
+<button onclick="gameChecker('lizard')"><i class="fas fa-hand-lizard"></i></button>
+<button onclick="gameChecker('spock')"><i class="fas fa-hand-spock"></i></button>
 </div>
 
 
+<div class="details">
+
+  <p id="userChoice"></p>
+  <p id="compChoice"></p>
+  <p id="result"></p>
+
+  
+</div>
+
+<p> <span id='winner'></span></p>
+<button id="click">Restart</button>
 
 
 
